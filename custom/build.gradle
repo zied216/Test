@@ -1,5 +1,8 @@
 apply plugin: 'com.android.library'
-
+// Required plugin in library module
+apply plugin: 'com.github.dcendents.android-maven'
+// Replace nisrulz with <your_github_username>
+group='com.github.zied216'
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.2"
