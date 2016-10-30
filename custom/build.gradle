@@ -1,8 +1,29 @@
 apply plugin: 'com.android.library'
-// Required plugin in library module
-apply plugin: 'com.github.dcendents.android-maven'
-// Replace nisrulz with <your_github_username>
-group='com.github.zied216'
+ext {
+    bintrayRepo = 'custom'
+    bintrayName = 'Custom'   // Has to be same as your library module name
+
+    publishedGroupId = 'com.ziedkhmiri.custom'
+    libraryName = 'custom'
+    artifact = 'custom'     // Has to be same as your library module name
+
+    libraryDescription = 'Android Library to make any text into Toast with Awesome prepended to the text'
+
+    // Your github repo link
+    siteUrl = 'https://github.com/zied216/Test'
+    gitUrl = 'https://github.com/zied216/Test.git'
+    githubRepository= 'zied216/Test'
+
+    libraryVersion = '1.0'
+
+    developerId = 'zied216'
+    developerName = 'Dev - Tools'
+    developerEmail = 'devtools216@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.2"
@@ -26,3 +47,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.2.1'
 }
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
