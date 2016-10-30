@@ -21,9 +21,10 @@ android:background="@android:color/holo_blue_bright"
     android:layout_marginLeft="@dimen/activity_horizontal_margin"
     android:layout_marginRight="@dimen/activity_horizontal_margin"
     app:CornerRadius="8dp"
-    app:LeftBottomCorner="false"
-    app:RightBottomCorner="false"
-    app:BottomEdges="false">
+    app:LeftBottomCorner="true"
+    app:RightBottomCorner="true"
+    app:BottomEdges="false"
+    app:BackgroundColor="#99000000">
 
 
 </com.ziedkhmiri.custom.CardView>

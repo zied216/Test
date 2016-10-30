@@ -42,12 +42,7 @@ class RoundRectDrawableWithShadow extends Drawable {
 
     final int mInsetShadow; // extra shadow to avoid gaps between card and shadow
 
-    /*
-    * This helper is set by CardView implementations.
-    * <p>
-    * Prior to API 17, canvas.drawRoundRect is expensive; which is why we need this interface
-    * to draw efficient rounded rectangles before 17.
-    * */
+
     static RoundRectHelper sRoundRectHelper;
 
     Paint mPaint;
