@@ -30,5 +30,5 @@ Custom Card View </br>
 }
 
 dependencies {
-    compile <span class="pl-s"><span class="pl-pds">'</span> compile 'com.ziedkhmiri.custom:custom:1.0'<span class="pl-pds">'</span></span>
+    compile <span class="pl-s">'<span class="pl-pds"></span> com.ziedkhmiri.custom:custom:1.0<span class="pl-pds">'</span></span>
 }</pre></div>
